@@ -2,7 +2,7 @@ import java.io.*;
 
 public class Main {
     public static void main(String[] args) throws FileNotFoundException {
-        File file=new File("C:\\Users\\sai.sri\\IdeaProjects\\Assignement-11\\ReadAndWriteFile\\src\\Source.txt");
+        File file=new File("Source.txt");
         String s = "";
         try {
             FileReader sr=new FileReader(file);
@@ -13,6 +13,5 @@ public class Main {
         } catch (Exception e){
             System.out.println("Exception caught"+e.getMessage());
         }
-        
     }
 }

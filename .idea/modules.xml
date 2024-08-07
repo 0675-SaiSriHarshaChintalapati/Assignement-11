@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/Assignement-11.iml" filepath="$PROJECT_DIR$/.idea/Assignement-11.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadAndWrite/ReadAndWrite.iml" filepath="$PROJECT_DIR$/ReadAndWrite/ReadAndWrite.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ReadFile/ReadFile.iml" filepath="$PROJECT_DIR$/ReadFile/ReadFile.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WordCount/WordCount.iml" filepath="$PROJECT_DIR$/WordCount/WordCount.iml" />
+    </modules>
+  </component>
+</project>

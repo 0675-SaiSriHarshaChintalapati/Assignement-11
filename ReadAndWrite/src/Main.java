@@ -3,7 +3,7 @@ import java.io.FileReader;
 import java.io.FileWriter;
 public class Main {
     public static void main(String[] args) {
-        try (FileReader reader = new FileReader("C:\\Users\\sai.sri\\IdeaProjects\\Assignement-11\\ReadAndWrite\\src\\source.txt");
+        try (FileReader reader = new FileReader("source.txt");
              FileWriter writer = new FileWriter("C:\\Users\\sai.sri\\IdeaProjects\\Assignement-11\\ReadAndWrite\\src\\destination.txt")) {
             String s = "";
             int character;

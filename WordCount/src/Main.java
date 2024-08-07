@@ -1,29 +1,27 @@
-import java.io.*;
-import java.util.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
-        File file = new File("C:\\Users\\sai.sri\\IdeaProjects\\Assignement-11\\WordCount\\src\\Input.txt");
-        ArrayList<String> str = new ArrayList<>();
-        Map<String,Integer> a=new HashMap<>();
-        try {
-            FileReader abc=new FileReader(file);
-            BufferedReader br = new BufferedReader(abc);
-            String s;
-            while ((s = br.readLine()) != null) {
-                str.add(s);
+        try{
+            File file = new File("src/CountWords/ text_file.txt");
+            if(file.createNewFile())
+                System.out.println(file.getName()+" created");
+        }catch(IOException e){e.printStackTrace();}
+
+        String[] array={" "};
+        try{BufferedReader bf = new BufferedReader(new FileReader("src/CountWords/ text_file.txt"));
+            String line;
+            int count=0;
+            while((line=bf.readLine())!=null){
+                array=line.split("[ \\n]+");
+                count+= array.length;
             }
-        } catch (IOException e) {
-            System.out.println("No Words in the Input File.");
-        }
-        for (String i : str) {
-            if(a.containsKey(i))
-                a.put(i,a.get(i)+1);
-            else
-                a.put(i,1);
-        }
-        for(Map.Entry<String,Integer> c:a.entrySet()){
-            System.out.println(c.getKey()+"--> "+c.getValue());
-        }
+            System.out.println("Number of words in the file is: "+ count);
+        }catch(IOException e){System.out.println(e);}
+
+
     }
 }
